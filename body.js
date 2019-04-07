@@ -7,21 +7,29 @@ class body{
     this.position = createVector(posx,posy);
     this.velocity = createVector(velx,vely);
     this.acceleration = createVector(0,0);
+    this.force = createVector(0,0);
     this.path = [];
   }
   update(){
     this.path.push([this.position.x,this.position.y]);
+
+    this.acceleration = this.force.div(this.mass);
     this.velocity = this.velocity.add(this.acceleration);
     this.position = this.position.add(this.velocity);
     ellipse(this.position.x, this.position.y, this.size, this.size);
     fill(this.color[0], this.color[1], this.color[2]);
+
+    this.force.x = 0;
+    this.force.y = 0;
   }
   calculate_Force(object){
     //f = Gm1m2/r^2
     var r = sqrt(pow(this.position.x - object.position.x,2) + pow(this.position.y - object.position.y,2));
     var obj1_to_obj2 = createVector(object.position.x - this.position.x, object.position.y - this.position.y);
     var acceleration = createVector((object.mass * obj1_to_obj2.x) / pow(r,3), (object.mass * obj1_to_obj2.y) / pow(r,3));
-    this.acceleration = acceleration;
+    var force = createVector(acceleration.x * this.mass , this.mass * acceleration.y);
+    this.force = this.force.add(force);
+    //this.acceleration = acceleration;
     //console.log(this.acceleration.mag());
   }
 
