@@ -11,13 +11,9 @@ function setup() {
   frameRate(60);
   createCanvas(width,height);
 
-  object1 = new body(2000,-100, -100, 0, 0,"0,153,255");
-
-  object3 = new body(1000, 100, -100, -2,0,"0,255,0");
-  object2 = new body(1000, 0, 0, 2, 0,"255, 0, 0");
-  // object1 = new body(1000,-100, -100, 2,0,"0,153,255");
-  // object3 = new body(500, 100, -100, -1,0,"0,255,0");
-  // object2 = new body(1000, 0, 0, 1, 1,"255, 0, 0");
+  object1 = new body(1000,-100, -100, 2,0,"0,153,255");
+  object3 = new body(500, 100, -100, -1,0,"0,255,0");
+  object2 = new body(1000, 0, 0, 1, 1,"255, 0, 0");
 }
 
 function draw() {
@@ -63,49 +59,4 @@ function draw() {
   }
   //console.log(frameCount);
 
-  // x = amplitude * sin((frameCount / period)* TWO_PI);
-  //
-  // fill(127);
-  // stroke(0);
-  // strokeWeight(4);
-  // line(amplitude,0,x,0);
-  // stroke(230);
-  // line(-amplitude,0,x,0);
-  // ellipse(x,y,50,50);
 }
-
-
-
-
-
-
-// var x = 0;
-// var y = 0;
-// let width;
-// let height;
-//
-// var amplitude = 300;
-// var period = 200;
-//
-// function setup() {
-//   width = 800;
-//   height = 800;
-//   frameRate(60);
-//   createCanvas(width,height);
-// }
-//
-// function draw() {
-//   // put drawing code here
-//   translate(width/2, height/2);
-//   background(255);
-//
-//   x = amplitude * sin((frameCount / period)* TWO_PI);
-//
-//   fill(127);
-//   stroke(0);
-//   strokeWeight(4);
-//   line(amplitude,0,x,0);
-//   stroke(230);
-//   line(-amplitude,0,x,0);
-//   ellipse(x,y,50,50);
-// }
