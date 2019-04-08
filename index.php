@@ -41,5 +41,7 @@
     <a href="nbody_version_2/index.html" class="button" style="border-color: green;">version 2</a>
     <a href="nbody_version_3/index.html" class="button" style="border-color: purple;">version 3</a>
     <a href="nbody_version_4/index.html" class="button" style="border-color: red;">version 4</a>
+    <a href="nbody_version_5/index.html" class="button" style="border-color: yellow;">version 5</a>
+
   </body>
 </html>
