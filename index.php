@@ -37,9 +37,9 @@
 
   </head>
   <body>
-    <a href="nbody_version_1/index.html" class="button" style="background-color: blue;">version 1</a>
-    <a href="nbody_version_2/index.html" class="button" style="background-color: green;">version 2</a>
-    <a href="nbody_version_3/index.html" class="button" style="background-color: purple;">version 3</a>
-    <a href="nbody_version_4/index.html" class="button" style="background-color: red;">version 4</a>
+    <a href="nbody_version_1/index.html" class="button" style="border-color: blue;">version 1</a>
+    <a href="nbody_version_2/index.html" class="button" style="border-color: green;">version 2</a>
+    <a href="nbody_version_3/index.html" class="button" style="border-color: purple;">version 3</a>
+    <a href="nbody_version_4/index.html" class="button" style="border-color: red;">version 4</a>
   </body>
 </html>
